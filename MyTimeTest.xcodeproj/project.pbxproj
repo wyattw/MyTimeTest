@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD047B1C19B11C290095075B /* MTTResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD047B1B19B11C290095075B /* MTTResultsViewController.m */; };
+		AD047B2219B125190095075B /* MTTResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD047B2119B125190095075B /* MTTResultCell.m */; };
+		AD047B2819B12A8D0095075B /* MuseoSans-100.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD047B2419B12A8D0095075B /* MuseoSans-100.otf */; };
+		AD047B2919B12A8D0095075B /* MuseoSans-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD047B2519B12A8D0095075B /* MuseoSans-300.otf */; };
+		AD047B2A19B12A8D0095075B /* MuseoSans-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD047B2619B12A8D0095075B /* MuseoSans-500.otf */; };
+		AD047B2B19B12A8D0095075B /* MuseoSans-700.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD047B2719B12A8D0095075B /* MuseoSans-700.otf */; };
+		AD047B2D19B131CA0095075B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD047B2C19B131CA0095075B /* Images.xcassets */; };
+		AD047B3019B132D00095075B /* MTTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AD047B2F19B132D00095075B /* MTTConstants.m */; };
+		AD047B3319B13BCB0095075B /* MTTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD047B3219B13BCB0095075B /* MTTAPIClient.m */; };
+		AD047B4019B1460B0095075B /* MTTSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = AD047B3E19B1460B0095075B /* MTTSearchResult.m */; };
+		AD047B4319B149BF0095075B /* MTTCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = AD047B4219B149BF0095075B /* MTTCompany.m */; };
+		ADA6B58D19B11868004B63C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6B58C19B11868004B63C6 /* Foundation.framework */; };
+		ADA6B58F19B11868004B63C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6B58E19B11868004B63C6 /* CoreGraphics.framework */; };
+		ADA6B59119B11868004B63C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6B59019B11868004B63C6 /* UIKit.framework */; };
+		ADA6B59719B11868004B63C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADA6B59519B11868004B63C6 /* InfoPlist.strings */; };
+		ADA6B59919B11868004B63C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA6B59819B11868004B63C6 /* main.m */; };
+		ADA6B59D19B11868004B63C6 /* MTTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA6B59C19B11868004B63C6 /* MTTAppDelegate.m */; };
+		ADA6B5A019B11868004B63C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA6B59E19B11868004B63C6 /* Main.storyboard */; };
+		ADA6B5A319B11868004B63C6 /* MTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA6B5A219B11868004B63C6 /* MTTViewController.m */; };
+		ADA6B5AC19B11868004B63C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6B5AB19B11868004B63C6 /* XCTest.framework */; };
+		ADA6B5AD19B11868004B63C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6B58C19B11868004B63C6 /* Foundation.framework */; };
+		ADA6B5AE19B11868004B63C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6B59019B11868004B63C6 /* UIKit.framework */; };
+		ADA6B5B619B11868004B63C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADA6B5B419B11868004B63C6 /* InfoPlist.strings */; };
+		ADA6B5B819B11868004B63C6 /* MyTimeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA6B5B719B11868004B63C6 /* MyTimeTestTests.m */; };
+		ADADAC1E19B2A88E0042A154 /* MTTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADADAC1D19B2A88E0042A154 /* MTTLocation.m */; };
+		ADADAC2119B2B7820042A154 /* MTTGoogleReview.m in Sources */ = {isa = PBXBuildFile; fileRef = ADADAC2019B2B7820042A154 /* MTTGoogleReview.m */; };
+		D19F6B59DEE74FEA9AF859C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D68EAB856046C79A0DC9EE /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA6B5AF19B11868004B63C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA6B58119B11868004B63C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA6B58819B11868004B63C6;
+			remoteInfo = MyTimeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15D68EAB856046C79A0DC9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD047B1A19B11C290095075B /* MTTResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTResultsViewController.h; sourceTree = "<group>"; };
+		AD047B1B19B11C290095075B /* MTTResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTResultsViewController.m; sourceTree = "<group>"; };
+		AD047B2019B125190095075B /* MTTResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTResultCell.h; sourceTree = "<group>"; };
+		AD047B2119B125190095075B /* MTTResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTResultCell.m; sourceTree = "<group>"; };
+		AD047B2419B12A8D0095075B /* MuseoSans-100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-100.otf"; sourceTree = "<group>"; };
+		AD047B2519B12A8D0095075B /* MuseoSans-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-300.otf"; sourceTree = "<group>"; };
+		AD047B2619B12A8D0095075B /* MuseoSans-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-500.otf"; sourceTree = "<group>"; };
+		AD047B2719B12A8D0095075B /* MuseoSans-700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MuseoSans-700.otf"; sourceTree = "<group>"; };
+		AD047B2C19B131CA0095075B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD047B2E19B132D00095075B /* MTTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTConstants.h; sourceTree = "<group>"; };
+		AD047B2F19B132D00095075B /* MTTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTConstants.m; sourceTree = "<group>"; };
+		AD047B3119B13BCB0095075B /* MTTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTAPIClient.h; sourceTree = "<group>"; };
+		AD047B3219B13BCB0095075B /* MTTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTAPIClient.m; sourceTree = "<group>"; };
+		AD047B3D19B1460B0095075B /* MTTSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTSearchResult.h; sourceTree = "<group>"; };
+		AD047B3E19B1460B0095075B /* MTTSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTSearchResult.m; sourceTree = "<group>"; };
+		AD047B4119B149BF0095075B /* MTTCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTCompany.h; sourceTree = "<group>"; };
+		AD047B4219B149BF0095075B /* MTTCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTCompany.m; sourceTree = "<group>"; };
+		ADA6B58919B11868004B63C6 /* MyTimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA6B58C19B11868004B63C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADA6B58E19B11868004B63C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ADA6B59019B11868004B63C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ADA6B59419B11868004B63C6 /* MyTimeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTimeTest-Info.plist"; sourceTree = "<group>"; };
+		ADA6B59619B11868004B63C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADA6B59819B11868004B63C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADA6B59A19B11868004B63C6 /* MyTimeTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTimeTest-Prefix.pch"; sourceTree = "<group>"; };
+		ADA6B59B19B11868004B63C6 /* MTTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTAppDelegate.h; sourceTree = "<group>"; };
+		ADA6B59C19B11868004B63C6 /* MTTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTAppDelegate.m; sourceTree = "<group>"; };
+		ADA6B59F19B11868004B63C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA6B5A119B11868004B63C6 /* MTTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTViewController.h; sourceTree = "<group>"; };
+		ADA6B5A219B11868004B63C6 /* MTTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTViewController.m; sourceTree = "<group>"; };
+		ADA6B5AA19B11868004B63C6 /* MyTimeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTimeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA6B5AB19B11868004B63C6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ADA6B5B319B11868004B63C6 /* MyTimeTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTimeTestTests-Info.plist"; sourceTree = "<group>"; };
+		ADA6B5B519B11868004B63C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADA6B5B719B11868004B63C6 /* MyTimeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTimeTestTests.m; sourceTree = "<group>"; };
+		ADADAC1C19B2A88E0042A154 /* MTTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTLocation.h; sourceTree = "<group>"; };
+		ADADAC1D19B2A88E0042A154 /* MTTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTLocation.m; sourceTree = "<group>"; };
+		ADADAC1F19B2B7820042A154 /* MTTGoogleReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTGoogleReview.h; sourceTree = "<group>"; };
+		ADADAC2019B2B7820042A154 /* MTTGoogleReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTGoogleReview.m; sourceTree = "<group>"; };
+		F29F41D5FBDE4966B1DE4228 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADA6B58619B11868004B63C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6B58F19B11868004B63C6 /* CoreGraphics.framework in Frameworks */,
+				ADA6B59119B11868004B63C6 /* UIKit.framework in Frameworks */,
+				ADA6B58D19B11868004B63C6 /* Foundation.framework in Frameworks */,
+				D19F6B59DEE74FEA9AF859C2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6B5A719B11868004B63C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6B5AC19B11868004B63C6 /* XCTest.framework in Frameworks */,
+				ADA6B5AE19B11868004B63C6 /* UIKit.framework in Frameworks */,
+				ADA6B5AD19B11868004B63C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD047B2319B12A8D0095075B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD047B2419B12A8D0095075B /* MuseoSans-100.otf */,
+				AD047B2519B12A8D0095075B /* MuseoSans-300.otf */,
+				AD047B2619B12A8D0095075B /* MuseoSans-500.otf */,
+				AD047B2719B12A8D0095075B /* MuseoSans-700.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AD047B3A19B1460B0095075B /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				AD047B3D19B1460B0095075B /* MTTSearchResult.h */,
+				AD047B3E19B1460B0095075B /* MTTSearchResult.m */,
+				AD047B4119B149BF0095075B /* MTTCompany.h */,
+				AD047B4219B149BF0095075B /* MTTCompany.m */,
+				ADADAC1C19B2A88E0042A154 /* MTTLocation.h */,
+				ADADAC1D19B2A88E0042A154 /* MTTLocation.m */,
+				ADADAC1F19B2B7820042A154 /* MTTGoogleReview.h */,
+				ADADAC2019B2B7820042A154 /* MTTGoogleReview.m */,
+			);
+			path = ModelObjects;
+			sourceTree = "<group>";
+		};
+		ADA6B58019B11868004B63C6 = {
+			isa = PBXGroup;
+			children = (
+				ADA6B59219B11868004B63C6 /* MyTimeTest */,
+				ADA6B5B119B11868004B63C6 /* MyTimeTestTests */,
+				ADA6B58B19B11868004B63C6 /* Frameworks */,
+				ADA6B58A19B11868004B63C6 /* Products */,
+				F29F41D5FBDE4966B1DE4228 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA6B58A19B11868004B63C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B58919B11868004B63C6 /* MyTimeTest.app */,
+				ADA6B5AA19B11868004B63C6 /* MyTimeTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA6B58B19B11868004B63C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B58C19B11868004B63C6 /* Foundation.framework */,
+				ADA6B58E19B11868004B63C6 /* CoreGraphics.framework */,
+				ADA6B59019B11868004B63C6 /* UIKit.framework */,
+				ADA6B5AB19B11868004B63C6 /* XCTest.framework */,
+				15D68EAB856046C79A0DC9EE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA6B59219B11868004B63C6 /* MyTimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B59B19B11868004B63C6 /* MTTAppDelegate.h */,
+				ADA6B59C19B11868004B63C6 /* MTTAppDelegate.m */,
+				AD047B2E19B132D00095075B /* MTTConstants.h */,
+				AD047B2F19B132D00095075B /* MTTConstants.m */,
+				ADA6B59E19B11868004B63C6 /* Main.storyboard */,
+				ADA6B5A119B11868004B63C6 /* MTTViewController.h */,
+				ADA6B5A219B11868004B63C6 /* MTTViewController.m */,
+				AD047B1A19B11C290095075B /* MTTResultsViewController.h */,
+				AD047B1B19B11C290095075B /* MTTResultsViewController.m */,
+				AD047B2019B125190095075B /* MTTResultCell.h */,
+				AD047B2119B125190095075B /* MTTResultCell.m */,
+				AD047B3119B13BCB0095075B /* MTTAPIClient.h */,
+				AD047B3219B13BCB0095075B /* MTTAPIClient.m */,
+				AD047B3A19B1460B0095075B /* ModelObjects */,
+				AD047B2C19B131CA0095075B /* Images.xcassets */,
+				AD047B2319B12A8D0095075B /* Fonts */,
+				ADA6B59319B11868004B63C6 /* Supporting Files */,
+			);
+			path = MyTimeTest;
+			sourceTree = "<group>";
+		};
+		ADA6B59319B11868004B63C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B59419B11868004B63C6 /* MyTimeTest-Info.plist */,
+				ADA6B59519B11868004B63C6 /* InfoPlist.strings */,
+				ADA6B59819B11868004B63C6 /* main.m */,
+				ADA6B59A19B11868004B63C6 /* MyTimeTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADA6B5B119B11868004B63C6 /* MyTimeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B5B719B11868004B63C6 /* MyTimeTestTests.m */,
+				ADA6B5B219B11868004B63C6 /* Supporting Files */,
+			);
+			path = MyTimeTestTests;
+			sourceTree = "<group>";
+		};
+		ADA6B5B219B11868004B63C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6B5B319B11868004B63C6 /* MyTimeTestTests-Info.plist */,
+				ADA6B5B419B11868004B63C6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA6B58819B11868004B63C6 /* MyTimeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA6B5BB19B11868004B63C6 /* Build configuration list for PBXNativeTarget "MyTimeTest" */;
+			buildPhases = (
+				CEBFF89034E5414384B335A0 /* Check Pods Manifest.lock */,
+				ADA6B58519B11868004B63C6 /* Sources */,
+				ADA6B58619B11868004B63C6 /* Frameworks */,
+				ADA6B58719B11868004B63C6 /* Resources */,
+				E69D3E4656AD4276B6A3D7E5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTimeTest;
+			productName = MyTimeTest;
+			productReference = ADA6B58919B11868004B63C6 /* MyTimeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA6B5A919B11868004B63C6 /* MyTimeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA6B5BE19B11868004B63C6 /* Build configuration list for PBXNativeTarget "MyTimeTestTests" */;
+			buildPhases = (
+				ADA6B5A619B11868004B63C6 /* Sources */,
+				ADA6B5A719B11868004B63C6 /* Frameworks */,
+				ADA6B5A819B11868004B63C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA6B5B019B11868004B63C6 /* PBXTargetDependency */,
+			);
+			name = MyTimeTestTests;
+			productName = MyTimeTestTests;
+			productReference = ADA6B5AA19B11868004B63C6 /* MyTimeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA6B58119B11868004B63C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MTT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rain Moose Software";
+				TargetAttributes = {
+					ADA6B5A919B11868004B63C6 = {
+						TestTargetID = ADA6B58819B11868004B63C6;
+					};
+				};
+			};
+			buildConfigurationList = ADA6B58419B11868004B63C6 /* Build configuration list for PBXProject "MyTimeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA6B58019B11868004B63C6;
+			productRefGroup = ADA6B58A19B11868004B63C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA6B58819B11868004B63C6 /* MyTimeTest */,
+				ADA6B5A919B11868004B63C6 /* MyTimeTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA6B58719B11868004B63C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD047B2819B12A8D0095075B /* MuseoSans-100.otf in Resources */,
+				AD047B2A19B12A8D0095075B /* MuseoSans-500.otf in Resources */,
+				AD047B2D19B131CA0095075B /* Images.xcassets in Resources */,
+				ADA6B59719B11868004B63C6 /* InfoPlist.strings in Resources */,
+				AD047B2919B12A8D0095075B /* MuseoSans-300.otf in Resources */,
+				AD047B2B19B12A8D0095075B /* MuseoSans-700.otf in Resources */,
+				ADA6B5A019B11868004B63C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6B5A819B11868004B63C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6B5B619B11868004B63C6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEBFF89034E5414384B335A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E69D3E4656AD4276B6A3D7E5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA6B58519B11868004B63C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADADAC1E19B2A88E0042A154 /* MTTLocation.m in Sources */,
+				ADA6B59D19B11868004B63C6 /* MTTAppDelegate.m in Sources */,
+				AD047B4019B1460B0095075B /* MTTSearchResult.m in Sources */,
+				AD047B3019B132D00095075B /* MTTConstants.m in Sources */,
+				ADADAC2119B2B7820042A154 /* MTTGoogleReview.m in Sources */,
+				AD047B3319B13BCB0095075B /* MTTAPIClient.m in Sources */,
+				ADA6B5A319B11868004B63C6 /* MTTViewController.m in Sources */,
+				AD047B2219B125190095075B /* MTTResultCell.m in Sources */,
+				ADA6B59919B11868004B63C6 /* main.m in Sources */,
+				AD047B4319B149BF0095075B /* MTTCompany.m in Sources */,
+				AD047B1C19B11C290095075B /* MTTResultsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6B5A619B11868004B63C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6B5B819B11868004B63C6 /* MyTimeTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA6B5B019B11868004B63C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA6B58819B11868004B63C6 /* MyTimeTest */;
+			targetProxy = ADA6B5AF19B11868004B63C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADA6B59519B11868004B63C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA6B59619B11868004B63C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADA6B59E19B11868004B63C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA6B59F19B11868004B63C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA6B5B419B11868004B63C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA6B5B519B11868004B63C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA6B5B919B11868004B63C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADA6B5BA19B11868004B63C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADA6B5BC19B11868004B63C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29F41D5FBDE4966B1DE4228 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTimeTest/MyTimeTest-Prefix.pch";
+				INFOPLIST_FILE = "MyTimeTest/MyTimeTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ADA6B5BD19B11868004B63C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29F41D5FBDE4966B1DE4228 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTimeTest/MyTimeTest-Prefix.pch";
+				INFOPLIST_FILE = "MyTimeTest/MyTimeTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADA6B5BF19B11868004B63C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyTimeTest.app/MyTimeTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTimeTest/MyTimeTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyTimeTestTests/MyTimeTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ADA6B5C019B11868004B63C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyTimeTest.app/MyTimeTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTimeTest/MyTimeTest-Prefix.pch";
+				INFOPLIST_FILE = "MyTimeTestTests/MyTimeTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA6B58419B11868004B63C6 /* Build configuration list for PBXProject "MyTimeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA6B5B919B11868004B63C6 /* Debug */,
+				ADA6B5BA19B11868004B63C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA6B5BB19B11868004B63C6 /* Build configuration list for PBXNativeTarget "MyTimeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA6B5BC19B11868004B63C6 /* Debug */,
+				ADA6B5BD19B11868004B63C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA6B5BE19B11868004B63C6 /* Build configuration list for PBXNativeTarget "MyTimeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA6B5BF19B11868004B63C6 /* Debug */,
+				ADA6B5C019B11868004B63C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADA6B58119B11868004B63C6 /* Project object */;
+}
